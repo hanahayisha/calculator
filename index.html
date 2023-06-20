@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+          <h1><center><b>CALCULATOR</b></center></h1>
+            <form>
+                <div class="display">
+                    <input id="result" type="text" name="display">
+                </div>
+                <div>
+                    <input id="allclr" type="button" value="AC" class="operatortop" onclick="allClear()">
+                    <input id="del" type="button" value="DE" class="operatortop" onclick="backspace()">
+                    <input id="mod" type="button" value="%" onclick="displayData('%')" class="operatortop">
+                    <input id="div" type="button" value="/" onclick="displayData('/')" class="operatorside">
+                </div>
+                <div>
+                    <input id="seven" type="button" value="7" onclick="displayData(7)">
+                    <input id="eight" type="button" value="8" onclick="displayData(8)">
+                    <input id="nine" type="button" value="9" onclick="displayData(9)">
+                    <input id="multi" type=" button" value="*" onclick="displayData('*')" class="operatorside">
+                </div>
+                <div>
+                    <input id="four" type="button" value="4" onclick="displayData(4)">
+                    <input id="five" type="button" value="5" onclick="displayData(5)">
+                    <input id="six" type="button" value="6" onclick="displayData(6)">
+                    <input id="sub" type="button" value="-" onclick="displayData('-')" class="operatorside">
+                </div>
+                <div>
+                    <input id="one" type="button" value="1" onclick="displayData(1)">
+                    <input id="two" type="button" value="2" onclick="displayData(2)">
+                    <input id="three" type="button" value="3" onclick="displayData(3)">
+                    <input id="add" type="button" value="+" onclick="displayData('+')" class="operatorside">
+                </div>
+                <div>
+                    <input id="zero" type="button" value="0" onclick="displayData(0)" class="zero">
+                    <input type="button" value="()" onclick="display.value += '()' ">
+                    <input id="dot" type="button" value="." onclick="displayData('.')">
+                    <input id="equalto" type="button" value="=" onclick="output()" class="operatorside">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+
+</html>
